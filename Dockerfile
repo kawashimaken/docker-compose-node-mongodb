@@ -1,4 +1,5 @@
-FROM node:argon
+# very small node image
+FROM mhart/alpine-node:4
 
 RUN mkdir /app
 WORKDIR /app
