@@ -15,6 +15,8 @@ change directory to docker-compose-node-mongodb
 
 docker-compose up --build
 
+open your browser and access http://localhost:3000
+
 
 ## Stop and Restart
 
