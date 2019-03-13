@@ -1,5 +1,5 @@
 # very small node image
-FROM mhart/alpine-node:4
+FROM node:10-alpine
 
 RUN mkdir /app
 WORKDIR /app
@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json /app
 RUN npm install
 
-COPY . /app
+COPY ./app /app
 
 EXPOSE 3000
 

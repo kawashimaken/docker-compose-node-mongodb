@@ -9,11 +9,11 @@ services:
     links:
       - mongo:mongo
   mongo:
-    image: mongo:3.0
+    image: mongo:3.4
     ports:
       - "27017:27017"
     command: --smallfiles
     #left use your host volume location
     #right use the default image setting ->/data/db/
     volumes:
-      - /Users/macbookpro15/Desktop/mongodata/db:/data/db/
+      - ./mongodata/db:/data/db/
