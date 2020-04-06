@@ -5,11 +5,11 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - mongo
+      - mongodb
     links:
-      - mongo:mongo
-  mongo:
-    image: mongo:3.4
+      - mongodb:mongodb
+  mongodb:
+    image: mongo:3.6
     ports:
       - "27017:27017"
     command: --smallfiles
