@@ -1,1 +1,2 @@
-mongodata/db/
+**/mongodata/db/
+**/node_modules
